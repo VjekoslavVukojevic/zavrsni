@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pocetna_style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="slike/vukojevic_logo.svg" alt="logo tvrtke"></a>
+        </div>
+
+
+        <ul class="nav">
+
+            <li><a href="O_nama.html">O nama</a></li>
+            <li><a href="apartmani.html">Apartmani</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li> <a href="cesta_pitanja.html">Česta pitanja</a></li>
+            <li><a href="aktivnosti.html">Aktivnosti</a></li>
+        </ul>
+
+
+    </nav>
+
+    <section class="uvod">
+        <div class="kolona">
+            <h1 class="h1">Česta Pitanja - Vukojević Apartmani</h1>
+            <p>Dobrodošli na stranicu najčešće postavljanih pitanja. Ovdje ćete pronaći odgovore na pitanja vezana uz
+                naše apartmane, usluge i boravak kod nas.</p>
+        </div>
+    </section>
+    <section class="container3">
+        <div class="section">
+            <h2 onclick="toggleFAQ(this)">1. Kako mogu rezervirati apartman?</h2>
+            <p>Rezervaciju možete napraviti putem raznih kanala distribucije, ili nas kontaktirati direktno putem emaila ili
+                telefona.</p>
+        </div>
+
+        <div class="section">
+            <h2 onclick="toggleFAQ(this)">2. Koje su cijene najma apartmana?</h2>
+            <p>Cijene se razlikuju ovisno o sezoni i vrsti apartmana. Za točan iznos, molimo vas da nas kontaktirate
+                direktno ili provjerite na našoj stranici s cijenama.</p>
+        </div>
+
+        <div class="section">
+            <h2 onclick="toggleFAQ(this)">3. Koje sadržaje nude apartmani?</h2>
+            <p>Naši apartmani imaju besplatan WiFi, klima uređaj, kuhinju, privatnu kupaonicu i terasu. Također, nudimo
+                besplatan parking za sve naše goste.</p>
+        </div>
+
+        
+    </section>
+
+    <script>
+        
+        function toggleFAQ(element) {
+            const section = element.parentElement;
+            section.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+</body>
+<footer>
+    <div class="social-media">
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="slike/instagram_ikonica.png"
+                alt="Instagram"></a>
+        <a href="https://api.whatsapp.com/send?phone=+38212345678" target="_blank" class="social-icon"><img
+                src="slike/whatsapp_2504957.png" alt="WhatsApp"></a>
+        <a href="mailto:info@vukojevicapartmani.com" target="_blank" class="social-icon"><img src="slike/gmail_5968534.png"
+                alt="Email"></a>
+        <p class="copy">&copy; 2025 Vukojević Apartmani | Sva prava zadržana</p>
+    </div>
+</footer>
+
+</html>
