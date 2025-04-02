@@ -28,7 +28,7 @@
     <p class="pozor">Slike i videi su sopstveni i proizvoljno predstavljaju apartmane</p>
     <div class="galerija">
         <div class="galerija_slika">
-            <img src="slike/galerija1.jpg" alt="Slika 1">
+            <img src="slike/galerija1_uredjena_slika.png" alt="Slika 1">
         </div>
         <div class="galerija_slika">
             <img src="slike/galerija2.jpg" alt="Slika 2">
@@ -43,11 +43,34 @@
             <img src="slike/galerija5.jpg" alt="Slika 5">
         </div>
         <div class="galerija_slika">
-            <video controls src="video.mp4" alt="Video 1" class="gallery-video"></video>
+            <video controls src="Uredjeni video i bitmapa/Vjekoslav_Vukojevic_UradjeniVideo.mp4" alt="Video 1"></video>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img id="overlay_img" src="slike/galerija1_uredjena_slika.png" alt="Povećana slika">
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img id="overlay_img " src="slike/galerija2.jpg" alt="Povećana slika">
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img id="overlay_img" src="slike/galerija3.jpg" alt="Povećana slika">
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img id="overlay_img" src="slike/galerija4.jpg" alt="Povećana slika">
+        </div>
+
+        <div class="overlay" id="overlay">
+            <img id="overlay_img" src="slike/galerija5.jpg" alt="Povećana slika">
         </div>
 
     </div>
 
+    <script>
+        document.querySelectorAll('.galerija_slika img').forEach(img => { img.addEventListener('click', function () { document.getElementById('overlay_img').src = this.src; document.getElementById('overlay').classList.add('active'); }); }); document.getElementById('overlay').addEventListener('click', function () { this.classList.remove('active'); });
+    </script>
 </body>
 <footer>
     <div class="social-media">
